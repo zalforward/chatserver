@@ -207,14 +207,17 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
 
 void ChatService::reg(const TcpConnectionPtr &conn, json &js, Timestamp time)
 {
-
+    cout << "注册业务服务器端开始"<<endl;
+    cout <<js<<endl;
     string name = js["name"];
-    string pwd = js["passward"];
+    string pwd = js["password"];
 
     User user;
     user.setName(name);
     user.setPwd(pwd);
+    cout<<"_userModel.insert(user);之前"<<endl;
     bool state = _userModel.insert(user);
+    cout<<"state:"<<state<<endl;
     if (state)
     {
         // 注册成功
