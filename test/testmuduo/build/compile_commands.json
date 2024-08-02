@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/zal/code/testmuduo/build",
+  "command": "/usr/bin/c++   -g -g -o CMakeFiles/server.dir/muduo_server.cpp.o -c /home/zal/code/testmuduo/muduo_server.cpp",
+  "file": "/home/zal/code/testmuduo/muduo_server.cpp"
+}
+]
